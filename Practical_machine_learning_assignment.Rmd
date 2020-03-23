@@ -2,9 +2,7 @@
 title: "Practical Machine Learning Project"
 author: "Asima Zia"
 date: "3/17/2020"
-output:
-  md_document:
-    variant: markdown_github
+output: pdf_document
 ---
 ## Overview
 
@@ -119,4 +117,4 @@ ggplot(ModelAccuracy, aes(x = Models, y = Accuracy)) +
   theme_bw()
 ```
 
-From the result, we can see that both the random forest and general boosting model perform better than the decision tree. The random forest model slightly shows better accuracy than the generalized boosted model. So for the quiz section, I will use the random forest model on the Test dataset given for the assignment quiz.
+From the result, we can see that both the random forest and general boosting model perform better than the decision tree. The random forest model slightly shows better accuracy than the generalized boosted model. Also, the out of sample error is ~ 0.18% that is good enough to use this model for the quiz section. So for the quiz section, I will use the random forest model on the Test dataset given for the assignment quiz.
